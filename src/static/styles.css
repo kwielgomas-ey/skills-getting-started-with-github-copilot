@@ -83,15 +83,35 @@ section h3 {
 
 .activity-participants {
   margin-top: 8px;
-  padding-left: 20px;
+  padding-left: 0;
+  margin-left: 0;
   color: #444;
   font-size: 0.95rem;
+  list-style: none; /* hide bullets */
 }
 
 .activity-participant {
   margin-bottom: 6px;
-  list-style-type: disc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   word-break: break-word;
+}
+
+.remove-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.remove-participant:hover {
+  background-color: rgba(198,40,40,0.08);
 }
 
 .form-group {
